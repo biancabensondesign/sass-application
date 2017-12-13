@@ -1,0 +1,27 @@
+{
+  "name": "ARTicle_blog_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "DATABASE_URL=postgres://process.env.POSTGRES_USER@localhost:3000/blog_application",
+    "dialect": "postgres"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "connect-session-sequelize": "^5.0.1",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "fs": "0.0.1-security",
+    "pg": "^7.4.0",
+    "pug": "^2.0.0-rc.4",
+    "reset-css": "^2.2.1",
+    "sequelize": "^4.23.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}

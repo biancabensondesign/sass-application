@@ -1,0 +1,29 @@
+extends layout
+
+block content
+	body.profile-bg
+		div.nav
+			ul
+				if user
+					li
+						a(href='/profile') Your profile
+					li
+						a(href='/yourposts') Your posts
+					li
+						a(href='/post/new') Create a new post
+					li
+						a(href='/posts') Blogfeed
+					li
+						a(href='/logout') Log out
+				else
+					li
+						a(href='/') Home/Log in
+					li
+						a(href='/posts') Blogfeed
+
+					
+
+		if user 
+			p #{user.username}
+		h1 Welcome to your ARTicle profile #{user.username}
+		h3 Your email is: #{user.email}

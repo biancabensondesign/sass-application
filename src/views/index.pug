@@ -1,0 +1,59 @@
+extends layout
+
+block content
+	body.index-bg
+		div.nav
+			ul
+				if user
+					li
+						a(href='/profile') Your profile
+					li
+						a(href='/yourposts') Your posts
+					li
+						a(href='/post/new') Create a new post
+					li
+						a(href='/posts') Blogfeed
+					li
+						a(href='/logout') Log out
+				else
+					li
+						a(href='/') Home/Log in
+					li
+						a(href='/posts') Blogfeed
+
+					
+
+		if user 
+			p #{user.username}
+			
+	h1 ARTicles - an art blog
+	if user
+		h2 Welcome, #{user.username}
+		h3= message
+	else
+		div.login
+			form(action='/login' method='post')
+				h2 Log in
+				input(type='text', name='email', placeholder='Enter your email' required)
+				input(name='password' type='password', placeholder='Enter your password' required)
+				input(type='submit' value='log in' id='submit')
+			//-p= message
+			h2#error-message= message
+		
+		div.signup
+			form(action='/register', method='post')
+				h2 Sign up
+				input(type='text', name='username', placeholder='Enter your username' required)
+				input(type='text', name='email', placeholder='Enter your email' required)
+				input(type='password', name='password', minlength='8', placeholder='Choose a password' required)
+				input(type='submit' value='sign up' id='submit')
+	script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+	script.
+		$(document).ready(function () {
+			$('#submit').click(function(event){
+			if($('#email').val().trim().length === 0 || $('#password').val().trim().length === 0) {
+				event.preventDefault();
+				$('#error-message').html("Please enter username and password");
+			}
+		})
+		})

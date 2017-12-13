@@ -1,0 +1,45 @@
+extends layout
+
+block content
+	body.blogposts-bg
+		div.nav
+			ul
+				if user
+					li
+						a(href='/profile') Your profile
+					li
+						a(href='/yourposts') Your posts
+					li
+						a(href='/post/new') Create a new post
+					li
+						a(href='/posts') Blogfeed
+					li
+						a(href='/logout') Log out
+				else
+					li
+						a(href='/') Home/Log in
+					li
+						a(href='/posts') Blogfeed
+
+					
+
+		if user 
+			p #{user.username}
+			
+	article
+	h1 ARTicle blogfeed
+	p= message
+	br
+	h2 Here you can view all the posts by all our users.
+	div.container
+			h2 Our users have entered #{blogposts.length} blogposts!
+			each post in blogposts
+				h3 
+					a(href='/blogposts/' + post.id) Blogpost #{post.id}
+					p #{post.title}
+					p #{post.body}
+					p Posted by #{post.userId}
+				//- h3 Comments
+				//- 	if comments
+				//- 			each comment in comments
+				//- 				p #{comment.body}

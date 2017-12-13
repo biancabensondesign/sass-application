@@ -1,0 +1,50 @@
+extends layout
+
+block content
+	body
+		#main
+			
+		div.nav
+			ul
+				if user
+					li
+						a(href='/profile') Your profile
+					li
+						a(href='/yourposts') Your posts
+					li
+						a(href='/post/new') Create a new post
+					li
+						a(href='/posts') Blogfeed
+					li
+						a(href='/logout') Log out
+				else
+					li
+						a(href='/') Home/Log in
+					li
+						a(href='/posts') Blogfeed
+
+					
+
+		if user 
+			p #{user.username}
+			
+		p #{blogpostId}
+		p #{title}
+		p #{body}
+
+		div
+			h4 Leave a comment
+				form(action='/comments' method='post')
+					textarea(minlength='5' rows="10" cols="25" name='body' placeholder='Comment' required)
+					br
+					input.btn(type='submit' value='Submit comment' id='submit')
+					input(type='hidden' name='postId' value= blogpostId)
+					br
+					h4 Comments:
+						if comments
+							each comment in comments
+								p #{comment.body}
+									//-each user in blogpost.users
+										p #{user.username}
+		
+					

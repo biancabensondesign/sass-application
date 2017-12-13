@@ -1,0 +1,42 @@
+/* sets base style for each page */
+
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* set background image per page */
+
+.index-bg {
+  background: url(images/raoul-dufy-indian-woman.jpg) no-repeat center center fixed;
+}
+
+.profile-bg {
+  background: url(images/davidhockney_veranda.jpg) no-repeat center center fixed;
+}
+
+.home-bg {
+  background: url(images/jeff_koons_hypebeast.jpg) no-repeat center center fixed;
+}
+
+.blogpost-bg {
+  background: url(images/home-bg.jpg) no-repeat center center fixed;
+}
+
+.blogposts-bg {
+  background: url(images/philistines_basquiat.jpg) no-repeat center center fixed;
+}
+
+.createpost-bg {
+  background: url(images/contact-bg.jpg) no-repeat center center fixed;
+}
+
+.viewnewcreatedpost-bg {
+  background: url(images/home-bg.jpg) no-repeat center center fixed;
+}
+
+.yourposts-bg {
+  background: url(images/about.bg.jpg) no-repeat center center fixed;
+}
