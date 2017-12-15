@@ -1,18 +1,18 @@
 extends layout
 
 block content
-	body
-		#main
-			
+	body.createpost-bg
 		div.nav
 			ul
+				a(href='./css/stylesheets/images/logo.small.png')
+				img#logo(src='./css/stylesheets/images/logo.small.png' alt='Article Logo')
 				if user
 					li
 						a(href='/profile') Your profile
 					li
 						a(href='/yourposts') Your posts
 					li
-						a(href='/post/new') Create a new post
+						a(href='/new') Create a new post
 					li
 						a(href='/posts') Blogfeed
 					li
@@ -29,15 +29,16 @@ block content
 			p #{user.username}
 			
 	if user
-		h2 Use this form to create a new post
-		form(action='/posts' method='post')
-			br
-			input#posttitle(name='title', type='text' required, placeholder='Post Title')
-			br
-			textarea#postbody(maxlength='2000' rows="20" cols="50" name='body' placeholder='Create your post here' required)
-			br
-			button.btn.btn-primary(type='submit') submit
-		p= message
+		div.createpost
+			h2 Use this form to create a new post
+			form(action='/posts' method='post')
+				br
+				input#posttitle(name='title', type='text' required, placeholder='Post Title')
+				br
+				textarea#postbody(maxlength='2000' rows="20" cols="50" name='body' placeholder='Create your post here' required)
+				br
+				button(type='submit') submit
+			p= message
 	else
 		p Please login to create a post!
 	

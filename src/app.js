@@ -1,3 +1,4 @@
+const path = require('path')
 const Sequelize = require('sequelize');
 const express = require('express');
 const session = require('express-session');
@@ -28,7 +29,7 @@ app.use(session({
 		expiration: 24 * 60 * 60 * 1000
 	}),
 	secret: "safe",
-	saveUnitialized: true,
+	saveUninitialized: true,
 	resave: false
 }))
 
@@ -194,7 +195,7 @@ app.get('/profile', (req,res) => {
 });
 
 //CREATEPOST PAGE ROUTE
-app.get('/post/new', (req, res) => {
+app.get('/new', (req, res) => {
 	const user = req.session.user;
 	var message = req.query.message
 	res.render('createpost', {user: user, message: message})

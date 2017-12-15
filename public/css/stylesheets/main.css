@@ -1,27 +1,23 @@
-@import url(reset.css);
+@import url(./reset.css);
 html {
   height: 100%; }
-
-::-moz-selection, ::selection {
-  background: #fe57a1;
-  color: #fff;
-  text-shadow: none; }
 
 body {
   background-image: radial-gradient(cover, #5c646f 0%, #1f2328 100%), url("http://i.minus.com/io97fW9I0NqJq.png"); }
 
+/*LOG IN FORM*/
 .login {
   background: #eceeee;
   border-radius: 6px;
   text-align: justify;
-  height: 257px;
-  margin: 220px auto 0;
-  width: 298px; }
+  padding-bottom: 100px;
+  height: 270px;
+  margin: 50px auto 0;
+  width: 370px; }
   .login h1 {
     background-image: linear-gradient(top, #f1f3f3, #d4dae0);
-    border-bottom: 1px solid #a6abaf;
+    border-bottom: 100px solid #a6abaf;
     border-radius: 6px 6px 0 0;
-    box-sizing: border-box;
     color: #727678;
     display: block;
     height: 43px;
@@ -42,45 +38,13 @@ input[type="Password"], input[type="text"] {
   text-align: justify;
   color: #95989A;
   height: 39px;
-  margin: 31px 0 0 29px;
-  padding-left: 37px;
+  padding-left: 50px;
   transition: box-shadow 0.3s;
   width: 240px; }
 input[type="password"]:focus, input[type="text"]:focus {
   box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
   outline: 0; }
 
-/*.show-password {
-  display: block;
-  height: 16px;
-  margin: 26px 0 0 28px;
-  width: 87px;
-}
-
-input[type="checkbox"] {
-  cursor: pointer;
-  height: 16px;
-  opacity: 0;
-  position: relative;
-  width: 64px;
-  &:checked {
-    left: 29px;
-    width: 58px;
-  }
-}
-
-.toggle {
-  background: url(http://i.minus.com/ibitS19pe8PVX6.png) no-repeat;
-  display: block;
-  height: 16px;
-  margin-top: -20px;
-  width: 87px;
-  z-index: -1;
-}
-
-input[type="checkbox"]:checked + .toggle {
-  background-position: 0 -16px;
-}*/
 input[type="submit"] {
   width: 240px;
   height: 35px;
@@ -90,9 +54,9 @@ input[type="submit"] {
   font-weight: bold;
   color: #fff;
   text-decoration: none;
-  text-align: justify;
+  text-align: center;
   padding-top: 6px;
-  margin: 29px 0 0 29px;
+  margin: 0px 0 0 67px;
   position: relative;
   cursor: pointer;
   border: none;
@@ -105,12 +69,14 @@ input[type="submit"] {
 .signup {
   background: #eceeee;
   border-radius: 6px;
-  height: 320px;
-  margin: 220px auto 0;
-  width: 298px; }
+  text-align: justify;
+  padding-bottom: 100px;
+  height: 300px;
+  margin: 50px auto 0;
+  width: 370px; }
   .signup h1 {
     background-image: linear-gradient(top, #f1f3f3, #d4dae0);
-    border-bottom: 1px solid #a6abaf;
+    border-bottom: 100px solid #a6abaf;
     border-radius: 6px 6px 0 0;
     box-sizing: border-box;
     color: #727678;
@@ -133,45 +99,14 @@ input[type="password"], input[type="text"] {
   text-align: justify;
   color: #95989A;
   height: 39px;
-  margin: 31px 0 0 29px;
+  margin: 31px 0 0 60px;
   padding-left: 37px;
   transition: box-shadow 0.3s;
-  width: 240px; }
+  width: 200px; }
 input[type="password"]:focus, input[type="text"]:focus {
   box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
   outline: 0; }
 
-/*.show-password {
-  display: block;
-  height: 16px;
-  margin: 26px 0 0 28px;
-  width: 87px;
-}
-
-input[type="checkbox"] {
-  cursor: pointer;
-  height: 16px;
-  opacity: 0;
-  position: relative;
-  width: 64px;
-  &:checked {
-    left: 29px;
-    width: 58px;
-  }
-}
-
-.toggle {
-  background: url(http://i.minus.com/ibitS19pe8PVX6.png) no-repeat;
-  display: block;
-  height: 16px;
-  margin-top: -20px;
-  width: 87px;
-  z-index: -1;
-}
-
-input[type="checkbox"]:checked + .toggle {
-  background-position: 0 -16px;
-}*/
 input[type="submit"] {
   width: 240px;
   height: 35px;
@@ -183,7 +118,7 @@ input[type="submit"] {
   text-decoration: none;
   text-align: center;
   padding-top: 6px;
-  margin: 29px 0 0 29px;
+  margin: 30px 0 -20px 60px;
   position: relative;
   cursor: pointer;
   border: none;
@@ -202,10 +137,14 @@ input[type="submit"] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
 
+#logo {
+  height: 80px;
+  float: right; }
+
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 15px;
   overflow: hidden;
   background-color: #FFFFFF; }
 
@@ -221,6 +160,50 @@ li {
       background-color: #95989A; }
 
 /* Change the link color to #111 (black) on hover */
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+body {
+  color: #FFFFFF;
+  font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center; }
+
+h1 {
+  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center; }
+
+h2 {
+  color: #95989A;
+  font-size: 24px;
+  line-height: 44px;
+  text-align: center; }
+
+h3 {
+  color: #95989A;
+  font-size: 21px;
+  text-align: center; }
+
+h4 {
+  color: #95989A;
+  font-size: 18px;
+  text-align: center; }
+
+h5 {
+  color: #95989A;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center; }
+
+strong {
+  font-weight: 400; }
+
+cite, em {
+  font-style: italic; }
+
 /* sets base style for each page */
 html {
   -webkit-background-size: cover;
@@ -236,22 +219,43 @@ html {
   background: url(images/davidhockney_veranda.jpg) no-repeat center center fixed; }
 
 .home-bg {
-  background: url(images/jeff_koons_hypebeast.jpg) no-repeat center center fixed; }
-
-.blogpost-bg {
-  background: url(images/home-bg.jpg) no-repeat center center fixed; }
-
-.blogposts-bg {
   background: url(images/philistines_basquiat.jpg) no-repeat center center fixed; }
 
+.blogpost-bg {
+  background: url(images/davidhockney_veranda.jpg) no-repeat center center fixed; }
+
+.blogposts-bg {
+  background: url(images/mark_rothko2.jpg) no-repeat center center fixed; }
+
 .createpost-bg {
-  background: url(images/contact-bg.jpg) no-repeat center center fixed; }
+  background: url(images/mark_rothko1.jpg) no-repeat center center fixed; }
 
 .viewnewcreatedpost-bg {
-  background: url(images/home-bg.jpg) no-repeat center center fixed; }
+  background: url(images/franz_kline3.jpg) no-repeat center center fixed; }
 
 .yourposts-bg {
-  background: url(images/about.bg.jpg) no-repeat center center fixed; }
+  background: url(images/mark_rothko3.jpg) no-repeat center center fixed; }
+
+.leavecomment-bg {
+  background: url(images/franz_kline3.jpg) no-repeat center center fixed; }
+
+.header {
+  background: #FFFFFF;
+  height: 70px;
+  width: 110%;
+  margin: -10px; }
+  .header h1 {
+    text-decoration: none;
+    border: 0;
+    width: 162px;
+    height: 113px;
+    margin: 0;
+    padding: 0;
+    background: url(/images/logo.small.png) no-repeat 0 0; }
+    .header h1 a {
+      display: block;
+      height: 113px;
+      text-indent: -9999px; }
 
 .footer {
   background: #FFFFFF;
@@ -261,5 +265,87 @@ html {
   padding: 1em;
   padding-width: 2em;
   padding-height: 2em; }
+
+html {
+  height: 100%; }
+
+body {
+  background-image: radial-gradient(cover, #5c646f 0%, #1f2328 100%), url("http://i.minus.com/io97fW9I0NqJq.png"); }
+
+/*CREATEPOST FORM*/
+.createpost {
+  background: #eceeee;
+  border-radius: 6px;
+  text-align: justify;
+  padding-bottom: 100px;
+  height: 550px;
+  margin: 50px auto 0;
+  width: 370px; }
+  .createpost h1 {
+    background-image: linear-gradient(top, #f1f3f3, #d4dae0);
+    border-bottom: 100px solid #a6abaf;
+    border-radius: 6px 6px 0 0;
+    box-sizing: border-box;
+    color: #727678;
+    display: block;
+    height: 43px;
+    font: 600 14px/1 'Open Sans', sans-serif;
+    padding-top: 14px;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 #fff; }
+  .createpost h2 {
+    text-align: center;
+    padding-top: 10px; }
+
+input[type="Password"], input[type="text"] {
+  background: url("http://i.minus.com/ibhqW9Buanohx2.png") center left no-repeat, linear-gradient(top, #d6d7d7, #dee0e0);
+  border-radius: 4px;
+  box-shadow: 0 1px #fff;
+  box-sizing: border-box;
+  text-align: left;
+  color: #95989A;
+  height: 39px;
+  margin: 15px 0 0 60px;
+  padding-left: 50px;
+  transition: box-shadow 0.3s;
+  width: 240px; }
+input[type="password"]:focus, input[type="text"]:focus {
+  box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+  outline: 0; }
+
+textarea {
+  border: 1px solid #888;
+  border-radius: 4px;
+  box-shadow: 0 1px #fff;
+  box-sizing: border-box;
+  text-align: center;
+  resize: none;
+  color: #95989A;
+  height: 300px;
+  margin: 29px 0 0 24px; }
+  textarea[type="text"]:focus {
+    box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+    outline: 0; }
+
+button[type='submit'] {
+  width: 240px;
+  height: 35px;
+  display: block;
+  font-family: Arial, "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 6px;
+  margin: 29px 0 0 67px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-color: #5A4B4B; }
+  button[type='submit']:active {
+    top: 3px;
+    box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #31524d, 0px 5px 3px #999; }
 
 /*# sourceMappingURL=main.css.map */

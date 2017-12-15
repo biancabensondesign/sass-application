@@ -1,1 +1,60 @@
+@import './partials/_colors'; 
 $font-stack: Arial, "Helvetica", 'sans-serif';
+
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+  color: $primary-color;
+  font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+// h1, h2, h3, h4 {
+//   color: $tertiary-color;
+// }
+
+h1 {
+  color: $primary-color;		
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+}
+
+h2 {
+  color: $secondary-color;
+  font-size: 24px;
+  line-height: 44px;
+  text-align: center;
+}
+
+h3 {
+  color: $secondary-color;
+  font-size: 21px;
+  text-align: center;
+}
+
+h4 {
+  color: $secondary-color;
+  font-size: 18px;
+  text-align: center;
+}
+
+h5 {
+  color: $secondary-color;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+strong {
+  font-weight: 400;
+}
+
+cite, em {
+  font-style: italic;
+}

@@ -1,5 +1,5 @@
 /* apply a natural box layout model to all elements */
-@import 'partials/_colors';
+@import './partials/_colors';
 
 * {
   -moz-box-sizing: border-box;
@@ -12,10 +12,15 @@
   }
 }
 
+#logo {
+  height: 80px;
+  float: right;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 15px;
   overflow: hidden;
   background-color: $primary-color;
 }

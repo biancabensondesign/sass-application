@@ -1,206 +1,72 @@
-@import url(reset-css/reset.css);
-html {
-  height: 100%; }
+/*
+Error: File to import not found or unreadable: ./partials/_colors.
+        on line 1 of public/css/stylesheets/partials/_forms.scss
+        from line 3 of public/css/stylesheets/main.scss
 
-::-moz-selection, ::selection {
-  background: #fe57a1;
-  color: #fff;
-  text-shadow: none; }
+1: @import './reset.css';
+2: @import './partials/_colors';
+3: @import './partials/_forms';
+4: @import './partials/_navigation';
+5: @import './partials/_typography';
+6: @import './partials/_images';
 
-body {
-  background-image: radial-gradient(cover, #5c646f 0%, #1f2328 100%), url("http://i.minus.com/io97fW9I0NqJq.png"); }
-
-.login {
-  background: #eceeee;
-  border-radius: 6px;
-  height: 257px;
-  margin: 220px auto 0;
-  width: 298px; }
-  .login h1 {
-    background-image: linear-gradient(top, #f1f3f3, #d4dae0);
-    border-bottom: 1px solid #a6abaf;
-    border-radius: 6px 6px 0 0;
-    box-sizing: border-box;
-    color: #727678;
-    display: block;
-    height: 43px;
-    font: 600 14px/1 'Open Sans', sans-serif;
-    padding-top: 14px;
-    margin: 0;
-    text-align: center;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 #fff; }
-
-input[type="Password"], input[type="text"] {
-  background: url("http://i.minus.com/ibhqW9Buanohx2.png") center left no-repeat, linear-gradient(top, #d6d7d7, #dee0e0);
-  border-radius: 4px;
-  box-shadow: 0 1px #fff;
-  box-sizing: border-box;
-  color: #95989A;
-  height: 39px;
-  margin: 31px 0 0 29px;
-  padding-left: 37px;
-  transition: box-shadow 0.3s;
-  width: 240px; }
-input[type="password"]:focus, input[type="text"]:focus {
-  box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
-  outline: 0; }
-
-.show-password {
-  display: block;
-  height: 16px;
-  margin: 26px 0 0 28px;
-  width: 87px; }
-
-input[type="checkbox"] {
-  cursor: pointer;
-  height: 16px;
-  opacity: 0;
-  position: relative;
-  width: 64px; }
-  input[type="checkbox"]:checked {
-    left: 29px;
-    width: 58px; }
-
-.toggle {
-  background: url(http://i.minus.com/ibitS19pe8PVX6.png) no-repeat;
-  display: block;
-  height: 16px;
-  margin-top: -20px;
-  width: 87px;
-  z-index: -1; }
-
-input[type="checkbox"]:checked + .toggle {
-  background-position: 0 -16px; }
-
-.forgot {
-  color: #7f7f7f;
-  display: inline-block;
-  float: right;
-  font: 12px/1 sans-serif;
-  left: -19px;
-  position: relative;
-  text-decoration: none;
-  top: 5px;
-  transition: color .4s; }
-  .forgot:hover {
-    color: #3b3b3b; }
-
-input[type="submit"] {
-  width: 240px;
-  height: 35px;
-  display: block;
-  font-family: Arial, "Helvetica", sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  padding-top: 6px;
-  margin: 29px 0 0 29px;
-  position: relative;
-  cursor: pointer;
-  border: none;
-  background-color: #5A4B4B; }
-  input[type="submit"]:active {
-    top: 3px;
-    box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #31524d, 0px 5px 3px #999; }
-
-/* apply a natural box layout model to all elements */
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-  *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
-
-::selection {
-  background: #000;
-  color: #aaf; }
-
-.alternate ::selection {
-  background: #c00;
-  color: #000; }
-
-body {
-  margin: 0;
-  padding: 0;
-  height: 2000px;
-  font-size: 16px;
-  line-height: 1.5; }
-
-ul, li, h1, h2, h3, h4, h5, h6, p, a, .logo {
-  font-family: Arial, "Helvetica",sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  margin: 0;
-  padding: 0; }
-
-.inner {
-  width: 800px;
-  position: relative;
-  margin: 0 auto; }
-
-header {
-  position: fixed;
-  width: 100%;
-  padding-top: 50px;
-  background: white;
-  transition: 0.7s all;
-  z-index: 100; }
-  header.alt-header {
-    background: #fff; }
-
-.alt-header a {
-  color: #000; }
-
-body.header-fixed header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding-top: 0;
-  width: 100%;
-  z-index: 2; }
-
-li {
-  list-style: none; }
-
-nav {
-  overflow: hidden; }
-  nav ul {
-    float: right; }
-  nav li {
-    display: inline;
-    float: left; }
-  nav a {
-    display: inline-block;
-    color: black;
-    text-decoration: none;
-    padding: 25px;
-    transition: 0.3s all; }
-    nav a:hover {
-      background: grey; }
-
-.logo {
-  float: left;
-  color: black;
-  font-size: 50px;
-  line-height: 50px;
-  transition: 0.7s all; }
-
-.alt-header .logo {
-  color: #000; }
-
-body.header-fixed .logo {
-  font-size: 30px; }
-
-.alternate {
-  background: #000;
-  color: #fff; }
-
-section .inner {
-  padding-top: 200px; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+public/css/stylesheets/partials/_forms.scss:1
+public/css/stylesheets/main.scss:3
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:45:in `import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:329:in `map'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:294:in `watch'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/plugin.rb:109:in `method_missing'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:22:in `load'
+/usr/local/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ./partials/_colors.\A         on line 1 of public/css/stylesheets/partials/_forms.scss\A         from line 3 of public/css/stylesheets/main.scss\A \A 1: @import './reset.css';\A 2: @import './partials/_colors';\A 3: @import './partials/_forms';\A 4: @import './partials/_navigation';\A 5: @import './partials/_typography';\A 6: @import './partials/_images';"; }

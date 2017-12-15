@@ -1,0 +1,33 @@
+@import './partials/_colors';
+
+.header {
+	background: $primary-color;
+	height:70px;
+	width:110%;
+	margin:-10px;
+
+  h1 {
+  text-decoration: none;
+  border: 0;
+  width: 162px;
+  height: 113px;
+  margin: 0;
+  padding: 0;
+  background: url(/images/logo.small.png) no-repeat 0 0;
+  a {
+    display: block;
+    height: 113px;
+    text-indent: -9999px;
+  }
+} 
+}	
+
+.footer {
+  background: $primary-color;
+  height: 12vh;
+  text-align: center;
+  color: white;
+  padding: 1em;
+  padding-width: 2em;
+  padding-height: 2em;
+}
